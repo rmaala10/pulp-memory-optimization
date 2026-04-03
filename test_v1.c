@@ -49,8 +49,8 @@ void cluster_matrix_mult(void *arg) {
             }
             matrix_c[i * MATRIX_SIZE + j] = sum; // Store the final dot product result
         }
-        }
     }
+    
 
     // Stop tracking hardware events now that the math is done
     pi_perf_stop();
